@@ -1,0 +1,32 @@
+:root {
+    /* Colors: */
+    --body-bg-color: #f4f4f4;
+    --header-bg-color: #e7e1d0;
+    --header-shadow-color: #1b1b14;
+    --main-red-color: #e02b1a;
+    --shadow-red-color: #9d1609;
+    --regular-black-color: #000000;
+    --accent-black-color: #1d1717;
+    --button-text-color: #ffffff;
+
+    /* Fonts: */
+    --inter-font-family: "Inter", sans-serif;
+    --roboto-font-family: "Roboto", sans-serif;
+    --italianno-font-family: "Italianno", cursive;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--body-bg-color);
+}
