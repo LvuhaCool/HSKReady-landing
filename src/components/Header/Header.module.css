@@ -15,12 +15,12 @@
     font-size: 48px;
     font-family: var(--italianno-font-family);
     color: var(--main-red-color);
+    cursor: pointer;
 }
 
 .navigation {
     display: flex;
     column-gap: 200px;
-    padding-top: 16px;
 }
 
 /* --- Анимация обводки --- */
@@ -126,4 +126,45 @@
 }
 .CTABtn.isPressed {
     box-shadow: 0 0 0 0 var(--shadow-red-color);
+}
+
+/* --- Адаптивность --- */
+
+@media (max-width: 1760px) {
+    .header {
+        column-gap: 150px;
+    }
+}
+
+@media (max-width: 1445px) {
+    .header {
+        column-gap: 100px;
+    }
+}
+
+@media (max-width: 1350px) {
+    .navigation {
+        column-gap: 100px;
+    }
+
+    .CTAWrapper {
+        padding-left: 55px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header {
+        column-gap: 55px;
+    }
+}
+
+@media (max-width: 1085px) {
+    .header {
+        padding-left: 30px;
+        column-gap: 40px;
+    }
+
+    .navigation {
+        column-gap: 30px;
+    }
 }
