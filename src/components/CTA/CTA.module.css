@@ -1,0 +1,51 @@
+.CTA {
+    margin-top: 37px;
+
+    display: flex;
+    column-gap: 435px;
+}
+
+.description {
+    padding-left: 142px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.descriptionHeading {
+    font-size: 38px;
+    font-weight: 500;
+    font-family: var(--inter-font-family);
+    color: var(--accent-black-color);
+}
+
+.descriptionText {
+    margin-top: 30px;
+    width: 600px;
+
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--inter-font-family);
+    color: var(--regular-black-color);
+}
+
+.CTAButton {
+    margin-top: 74px;
+}
+
+.characterCard {
+    width: 500px;
+    height: 600px;
+
+    background-color: var(--button-text-color);
+
+    border-radius: 26px;
+    box-shadow: 0 0 5px 0.5px var(--shadow-red-color);
+
+    transition: transform 0.3s linear;
+}
+
+.characterCard:hover {
+    transform: translateX(-1px);
+    transform: translateY(-3px);
+}

@@ -61,31 +61,6 @@
     padding-left: 123px;
 }
 
-.CTABtn {
-    width: 220px;
-    height: 60px;
-
-    border: none;
-    border-radius: 10px;
-    background-color: var(--main-red-color);
-
-    font-size: 20px;
-    font-family: var(--roboto-font-family);
-    color: var(--button-text-color);
-
-    box-shadow: 2.5px 5px 0 0 var(--shadow-red-color);
-
-    transition: box-shadow 0.03s linear;
-}
-
-.CTABtn:hover {
-    box-shadow: 2px 4.2px 0 0 var(--shadow-red-color);
-}
-
-.CTABtn.isPressed {
-    box-shadow: 0 0 0 0 var(--shadow-red-color);
-}
-
 /* --- Адаптивность --- */
 
 @media (max-width: 1760px) {

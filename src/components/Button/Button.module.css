@@ -1,0 +1,25 @@
+.CTABtn {
+    width: 220px;
+    height: 60px;
+
+    border: none;
+    border-radius: 10px;
+    background-color: var(--main-red-color);
+
+    font-size: 22px;
+    font-family: var(--roboto-font-family);
+    color: var(--button-text-color);
+    font-weight: 500;
+
+    box-shadow: 2.5px 5px 0 0 var(--shadow-red-color);
+
+    transition: box-shadow 0.03s linear;
+}
+
+.CTABtn:hover {
+    box-shadow: 2px 4.2px 0 0 var(--shadow-red-color);
+}
+
+.CTABtn.isPressed {
+    box-shadow: 0 0 0 0 var(--shadow-red-color);
+}

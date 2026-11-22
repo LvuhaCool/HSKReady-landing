@@ -1,9 +1,7 @@
-import { useState } from "react";
 import styles from "./Header.module.css";
+import Button from "../Button/Button";
 
 function Header() {
-  const [isPressed, setIsPressed] = useState(false);
-
   return (
     <header className={styles.header}>
       <p className={styles.logo}>HSKReady</p>
@@ -12,14 +10,7 @@ function Header() {
         <a href="#!">Science</a>
       </nav>
       <div className={styles.CTAWrapper}>
-        <button
-          className={`${styles.CTABtn} ${isPressed ? styles.isPressed : ""}`}
-          onMouseDown={() => setIsPressed(true)}
-          onMouseUp={() => setIsPressed(false)}
-          onMouseLeave={() => setIsPressed(false)}
-        >
-          Start learning
-        </button>
+        <Button children={"Start learning"} />
       </div>
     </header>
   );
