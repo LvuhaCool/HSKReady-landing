@@ -8,7 +8,7 @@ function CTA() {
         <h1 className={styles.descriptionHeading}>Learn characters easily</h1>
         <p className={styles.descriptionText}>
           Our science-backed system lets you memorize chinese hyerogliphs as
-          easy as possible. In just 15-20 minutes a day you will stop blanking
+          easy as possible. In just 15–20 minutes a day you will stop blanking
           when seeing chinese texts. The app has an easy-to-follow learning
           schedule, playful interface, and uses actually working study
           techiques.
