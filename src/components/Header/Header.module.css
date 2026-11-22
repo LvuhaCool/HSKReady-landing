@@ -33,10 +33,28 @@
     text-decoration: none;
 
     transition: color 0.15s ease;
+    position: relative;
+}
+
+.navigation a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    width: 100%;
+    height: 1px;
+    background-color: var(--shadow-red-color);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.4s ease-out;
 }
 
 .navigation a:hover {
     color: var(--shadow-red-color);
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
 }
 
 .CTAWrapper {
@@ -66,4 +84,45 @@
 
 .CTABtn.isPressed {
     box-shadow: 0 0 0 0 var(--shadow-red-color);
+}
+
+/* --- Адаптивность --- */
+
+@media (max-width: 1760px) {
+    .header {
+        column-gap: 150px;
+    }
+}
+
+@media (max-width: 1445px) {
+    .header {
+        column-gap: 100px;
+    }
+}
+
+@media (max-width: 1350px) {
+    .navigation {
+        column-gap: 100px;
+    }
+
+    .CTAWrapper {
+        padding-left: 55px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header {
+        column-gap: 55px;
+    }
+}
+
+@media (max-width: 1085px) {
+    .header {
+        padding-left: 30px;
+        column-gap: 40px;
+    }
+
+    .navigation {
+        column-gap: 30px;
+    }
 }
