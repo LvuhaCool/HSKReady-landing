@@ -1,0 +1,13 @@
+.wrapper {
+    margin-top: 300px;
+    margin-bottom: 300px;
+}
+
+.heading {
+    text-align: center;
+
+    font-size: 50px;
+    font-weight: 600;
+    font-family: var(--inter-font-family);
+    color: var(--accent-black-color);
+}
